@@ -1,49 +1,84 @@
-<section class="hero is-halfheight has-text-left has-background-white-ter" id="about">
+<section class="hero is-halfheight has-background-white-ter" id="about">
   <div class="hero-body">
     <div class="container">
-      <div class="title">
-        <b>About</b>
-      </div>
+      <div class="title"><b>About</b></div>
       <br>
+
       <div class="columns is-vcentered">
         <!-- 左侧头像 -->
         <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-quarter-fullhd">
-          <figure class="image is-square">
-            <img src="assets/images/I.jpg" alt="Jinpei Guo">
+          <figure class="image">
+            <img class="profile-pic" src="assets/images/I.jpg" alt="{{site.author-name}}">
           </figure>
         </div>
 
         <!-- 右侧文字 -->
         <div class="column">
-          <p style="font-size:18px;">
-            Hi, there! I am Jinpei Guo, a second-year student in the MSML program at
-              <span style="text-decoration:underline;"><a href="https://www.cmu.edu/" style="color: #000000">Carnegie Mellon University</a></span>.
-            My research focuses on low-level computer vision, including image and video restoration, compression,
-            and diffusion-based generative models. I am particularly interested in developing efficient generative
-            frameworks that unify restoration and compression across diverse real-world degradations.
-            I worked closely with <a href="https://jianwang-cmu.github.io/">Dr. Jian Wang</a>.
-            Prior to that, I received my bachelor’s degree from
-            <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
-            where I worked with <a href="https://thinklab.sjtu.edu.cn/">Prof. Junchi Yan</a>
-            and collaborated with <a href="https://thinklab.sjtu.edu.cn/">Prof. Xujie Si</a>.
+          <p class="font_7 wixui-rich-text__text" style="font-size:18px;">
+            Hi, there! I am Jinpei Guo, a first-year student in the MSML program at
+            <a href="https://www.ml.cmu.edu/academics/primary-ms-machine-learning-masters.html" class="clean-link">Carnegie Mellon University</a>.
+            <br><br>
+            I worked closely with Prof.
+            <a href="https://thinklab.sjtu.edu.cn/" class="clean-link">Junchi Yan</a>
+            as a research assistant at
+            <a href="https://thinklab.sjtu.edu.cn/" class="clean-link">SJTU-ReThinkLab</a>.
+            We developed methods to facilitate the accuracy and efficiency of machine learning models on combinatorial optimization problems.
+            We applied language models and generative models to graph matching, travelling salesman problem, maximum independent set, etc.
+            I also did research with Prof.
+            <a href="https://www.cs.toronto.edu/~six/" class="clean-link">Xujie Si</a>
+            at
+            <a href="https://github.com/ML-PL/" class="clean-link">University of Toronto</a>
+            on Neural Logical Reasoning. We developed reliable and interpretable frameworks to capture the rules of logical puzzles explicitly.
+            We conducted research on machine learning for SAT solving as well, especially with GNNs.
+            <br><br>
+            My research interests lie at the intersection of machine learning and combinatorial optimization.
+            I am also interested in making the black-box reasoning or decision-making process explainable and reliable by analyzing the model structure and inference process from a mathematical perspective, or combining the machine learning models with exact solvers.
           </p>
 
-          <!-- 联系方式 -->
-          <br>
-          <h3 class="title is-5"><b>Contact Me</b></h3>
-          <div class="icons" style="font-size:22px;">
-            <a href="mailto:jinpeig@andrew.cmu.edu" style="margin-right:15px;" title="Email">
-              <i class="fas fa-envelope"></i>
+          <!-- 图标链接行 -->
+          <div class="icon-row" style="margin-top:18px;">
+            <!-- GitHub -->
+            <a class="icon-link" href="https://github.com/jp-guo" aria-label="GitHub" target="_blank" rel="noopener">
+              <!-- GitHub SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.02 1.63 1.02 2.75 0 3.95-2.35 4.82-4.58 5.08.36.32.67.93.67 1.88 0 1.36-.01 2.46-.01 2.8 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+              </svg>
             </a>
-            <a href="https://github.com/jp-guo" style="margin-right:15px;" title="GitHub">
-              <i class="fab fa-github"></i>
+
+            <!-- Google Scholar -->
+            <a class="icon-link" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" aria-label="Google Scholar" target="_blank" rel="noopener">
+              <!-- Scholar SVG (简化书本图标) -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 3 3 9l9 6 9-6-9-6zm-7 9v5l7 4v-5l-7-4zm16 0-7 4v5l7-4v-5z"/>
+              </svg>
             </a>
-            <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar">
-              <i class="ai ai-google-scholar"></i>
+
+            <!-- Email -->
+            <a class="icon-link" href="mailto:jinpeig@andrew.cmu.edu" aria-label="Email">
+              <!-- Envelope SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
             </a>
           </div>
         </div>
       </div>
+
     </div>
   </div>
+
+  <!-- 轻量样式：去边框、清洁链接、图标交互 -->
+  <style>
+    /* 图片不加边框/阴影 */
+    .profile-pic { border: 0; box-shadow: none; display: block; }
+
+    /* 链接清洁：不强制下划线与多余间距 */
+    .clean-link { text-decoration: none; color: #000; }
+    .clean-link:hover { text-decoration: underline; }
+
+    /* 图标行 */
+    .icon-row { display: flex; gap: 16px; align-items: center; }
+    .icon-link { display: inline-flex; line-height: 1; opacity: 0.9; }
+    .icon-link:hover { opacity: 1; transform: translateY(-1px); transition: transform 120ms ease, opacity 120ms ease; }
+  </style>
 </section>
