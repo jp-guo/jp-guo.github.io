@@ -1,83 +1,27 @@
-<section class="hero is-halfheight has-background-white-ter" id="about">
-  <div class="hero-body">
-    <div class="container">
-      <div class="title"><b>About</b></div>
-
-      <div class="columns is-vcentered is-multiline">
-        <!-- 左侧头像 -->
-        <div class="column is-4-tablet is-3-desktop">
-          <figure class="image">
-            <img class="profile-pic" src="assets/images/I.jpg" alt="{{site.author-name}}">
-          </figure>
-        </div>
-
-        <!-- 右侧文字 -->
-        <div class="column is-8-tablet is-9-desktop">
-          <div class="about-text">
-            <p>
-              Hi, there! I am Jinpei Guo, a first-year student in the MSML program at
-              <a href="https://www.ml.cmu.edu/academics/primary-ms-machine-learning-masters.html" class="clean-link">Carnegie Mellon University</a>.
-            </p>
-            <p>
-              I worked closely with Prof.
-              <a href="https://thinklab.sjtu.edu.cn/" class="clean-link">Junchi Yan</a> as a research assistant at
-              <a href="https://thinklab.sjtu.edu.cn/" class="clean-link">SJTU-ReThinkLab</a>.
-              We developed methods to improve the accuracy and efficiency of machine learning models on combinatorial optimization problems,
-              applying language and generative models to graph matching, the traveling salesman problem, maximum independent set, etc.
-            </p>
-            <p>
-              I also did research with Prof.
-              <a href="https://www.cs.toronto.edu/~six/" class="clean-link">Xujie Si</a> at the
-              <a href="https://github.com/ML-PL/" class="clean-link">University of Toronto</a> on Neural Logical Reasoning,
-              building reliable and interpretable frameworks to explicitly capture rules of logical puzzles and studying ML for SAT solving with GNNs.
-            </p>
-            <p>
-              My research interests lie at the intersection of machine learning and combinatorial optimization.
-              I’m also interested in making black-box reasoning and decision-making explainable and reliable by analyzing model structure/inference mathematically, or by coupling ML with exact solvers.
-            </p>
-
-            <!-- 图标链接行（紧凑） -->
-            <div class="icon-row" aria-label="profiles">
-              <a class="icon-link" href="https://github.com/jp-guo" aria-label="GitHub" target="_blank" rel="noopener">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05.78-.22 1.63-.34 2.5-.34s1.72.12 2.5.34c1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.02 1.63 1.02 2.75 0 3.95-2.35 4.82-4.58 5.08.36.32.67.93.67 1.88 0 1.36-.01 2.46-.01 2.8 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
-                </svg>
-              </a>
-
-              <a class="icon-link" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" aria-label="Google Scholar" target="_blank" rel="noopener">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 3 3 9l9 6 9-6-9-6zm-7 9v5l7 4v-5l-7-4zm16 0-7 4v5l7-4v-5z"/>
-                </svg>
-              </a>
-
-              <a class="icon-link" href="mailto:jinpeig@andrew.cmu.edu" aria-label="Email">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-                </svg>
-              </a>
+<section class="hero is-halfheight has-text-left has-background-white-ter" id="about"
+         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class="hero-body">
+        <div class="container">
+            <div class="title">
+                <b>About</b>
             </div>
-          </div>
+            <br>
+            <div class="columns">
+                <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
+                    <img src="assets/images/I.jpg" alt="{{site.author-name}}">
+                </div>
+                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+                    <p class="font_7 wixui-rich-text__text" style="font-size:18px;">
+                        Hi, there! I am Jinpei Guo, a first-year student in the MSML program at <span style="text-decoration:underline;"><a href="https://www.ml.cmu.edu/academics/primary-ms-machine-learning-masters.html" style="color: #000000">Carnegie Mellon University</a></span>.<br><br>
+                        I worked closely with Prof.<span style="text-decoration:underline;"><a href="https://thinklab.sjtu.edu.cn/" style="color: #000000">Junchi Yan</a></span>as a research assistant at<span style="text-decoration:underline;"><a href="https://thinklab.sjtu.edu.cn/" style="color: #000000">SJTU-ReThinkLab</a></span>. We developed methods to facilitate the accuracy and efficiency of machine learning models on combinatorial optimization problems. We applied language models and generative models to graph matching, travelling salesman problem, maximum indepent set, etc.
+                        I also did research with Prof.<span style="text-decoration:underline;"><a href="https://www.cs.toronto.edu/~six/" style="color: #000000">Xujie Si</a></span>at<span style="text-decoration:underline;"><a href="https://github.com/ML-PL/" style="color: #000000">University of Toronto</a></span>on Neural Logical Reasoning. We developed reliable and interpretable frameworks to capture the rules of logical puzzles explicitly. We conducted research on machine learning for SAT solving as well, especially with GNNs. <br><br>
+                        My research interests lie at the intersection of machine learning and combinatorial optimization. I am also interested in making the black-box reasoning or decision-making process explainable and reliable by analyzing the model structure and inference process from a mathematical perspective, or combining the machine learning models with exact solvers.
+                </div>
+            </div>
+            <br>
+            <p class="font_7 wixui-rich-text__text" style="font-size:20px;"><b>Contact Me</b><br>
+            <p class="font_7 wixui-rich-text__text" style="font-size:17px;">Email: jinpeig@andrew.cmu.edu<br>
+            <p class="font_7 wixui-rich-text__text" style="font-size:17px;">GitHub:<span style="text-decoration:underline;"><a href="https://github.com/jp-guo" style="color: #000000">jp-guo</a><br></span></p>
         </div>
-      </div>
-
     </div>
-  </div>
-
-  <style>
-    /* 图片：不加边框、不拉伸过大 */
-    .profile-pic { border: 0; box-shadow: none; display: block; max-width: 260px; width: 100%; height: auto; }
-
-    /* 右侧文字容器：防溢出、紧凑行高 */
-    .about-text { max-width: 820px; overflow-wrap: anywhere; word-break: break-word; }
-    .about-text p { margin: 0 0 0.7rem 0; font-size: 18px; line-height: 1.6; }
-
-    /* 链接：无多余空白/下划线，仅 hover 时下划线 */
-    .clean-link { text-decoration: none; color: #000; }
-    .clean-link:hover { text-decoration: underline; }
-
-    /* 图标行：黑色、更大、更紧凑；不独占一整行 */
-    .icon-row { display: inline-flex; gap: 10px; align-items: center; margin-top: 10px; }
-    .icon-link { display: inline-flex; line-height: 1; color: #000; opacity: 0.95; }
-    .icon-link:hover { opacity: 1; transform: translateY(-1px); transition: transform 120ms ease, opacity 120ms ease; }
-  </style>
 </section>
